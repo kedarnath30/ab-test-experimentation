@@ -1,0 +1,96 @@
+{
+  "n_players": 90189,
+  "srm": {
+    "n_control": 44700,
+    "n_treatment": 45489,
+    "share_treatment": 0.5043741476233243,
+    "chi2": 6.9024049496058275,
+    "p_value": 0.008607987810836243
+  },
+  "two_proportion_tests": {
+    "retention_1": {
+      "metric": "retention_1",
+      "rate_control": 0.4481879194630872,
+      "rate_treatment": 0.44228274967574577,
+      "diff_pp": -0.5905169787341458,
+      "rel_lift_pct": -1.317565585974656,
+      "z": -1.7840862247974725,
+      "p_value": 0.07440965529691913,
+      "ci95_diff_pp": [
+        -1.2392439449445218,
+        0.05820998747623034
+      ]
+    },
+    "retention_7": {
+      "metric": "retention_7",
+      "rate_control": 0.19020134228187918,
+      "rate_treatment": 0.18200004396667327,
+      "diff_pp": -0.8201298315205913,
+      "rel_lift_pct": -4.311903489646019,
+      "z": -3.164358912748191,
+      "p_value": 0.0015542499756143289,
+      "ci95_diff_pp": [
+        -1.3281552418885547,
+        -0.312104421152628
+      ]
+    }
+  },
+  "bootstrap": {
+    "retention_1": {
+      "metric": "retention_1",
+      "boot_ci95_diff_pp": [
+        -1.2522074958456633,
+        0.06061694094936228
+      ],
+      "prob_control_better": 0.9653
+    },
+    "retention_7": {
+      "metric": "retention_7",
+      "boot_ci95_diff_pp": [
+        -1.3356254060093582,
+        -0.3111327305177836
+      ],
+      "prob_control_better": 0.9992
+    }
+  },
+  "engagement": {
+    "outliers_removed": 1,
+    "outlier_value": 49854,
+    "mean_control": 51.342110561757536,
+    "mean_treatment": 51.29877552814966,
+    "median_control": 17.0,
+    "median_treatment": 16.0,
+    "mann_whitney_U": 1009027049.5,
+    "mann_whitney_p": 0.05089155279145375,
+    "welch_t": -0.06337426312892294,
+    "welch_p": 0.949468621546446,
+    "boot_ci95_mean_diff": [
+      -1.3374419047517652,
+      1.333628926279857
+    ],
+    "boot_ci95_median_diff": [
+      -1.0,
+      0.0
+    ],
+    "winsor_p99_cap": 493.0,
+    "winsor_mean_control": 49.12590885702141,
+    "winsor_mean_treatment": 48.853920728088106,
+    "winsor_welch_p": 0.6276489737411706
+  },
+  "power": {
+    "retention_1": {
+      "metric": "retention_1",
+      "mde_pp_80power": 0.9269389942270834,
+      "mde_rel_pct": 2.0681927244659395,
+      "power_at_observed_effect": 0.43028578572010956,
+      "n_per_arm_for_1pp": 38737
+    },
+    "retention_7": {
+      "metric": "retention_7",
+      "mde_pp_80power": 0.7268301848794262,
+      "mde_rel_pct": 3.821372531652594,
+      "power_at_observed_effect": 0.8857696023365191,
+      "n_per_arm_for_1pp": 23685
+    }
+  }
+}
